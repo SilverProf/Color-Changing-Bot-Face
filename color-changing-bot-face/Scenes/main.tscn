@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvfnaup5pvxd6"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_5wqjl"]
+[ext_resource type="Texture2D" uid="uid://cfumfyir3578e" path="res://icon.svg" id="1_gsd6p"]
+[ext_resource type="Material" uid="uid://5anxj2o05mcj" path="res://Materials/mat_bot.tres" id="1_mmfvc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_58bwj"]
+font_size = 48
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_5wqjl")
+
+[node name="InstructionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_top = 16.0
+offset_right = 1152.0
+offset_bottom = 153.0
+text = "Fix the _ready function in the main.gd script get the party started."
+label_settings = SubResource("LabelSettings_58bwj")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="BotTexture" type="TextureRect" parent="."]
+material = ExtResource("1_mmfvc")
+offset_left = 416.0
+offset_top = 240.0
+offset_right = 736.0
+offset_bottom = 560.0
+texture = ExtResource("1_gsd6p")

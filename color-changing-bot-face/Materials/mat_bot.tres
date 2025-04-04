@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://5anxj2o05mcj"]
+
+[ext_resource type="Shader" path="res://Materials/shd_bot.gdshader" id="1_ph543"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_ph543")
+shader_parameter/innerColor = Vector3(1, 1, 1)
+shader_parameter/outerColor = Vector3(1, 1, 1)
+shader_parameter/radius = 0.25
